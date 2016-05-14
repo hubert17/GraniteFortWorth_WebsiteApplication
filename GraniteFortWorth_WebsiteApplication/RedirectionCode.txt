@@ -1,0 +1,6 @@
+<div style="text-align:center;background:maroon;color:#fff;font-size:x-large;margin:0 0 0 0;">
+<strong>WE HAVE MOVED!&nbsp;&nbsp; </strong>
+ &nbsp;<a href="http://www.granitesouthlake.com/" title="DFW Granite Fort Worth Southlake NEW website" style="color:#FFCCCC;" >Click here to visit our NEW website.</a>
+  </div>
+
+<meta http-equiv="refresh" content="20;url=http://www.granitesouthlake.com/">

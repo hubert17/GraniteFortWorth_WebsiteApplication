@@ -1,0 +1,51 @@
+﻿/* 
+*	
+*	CSSG Collections: Forms
+*	designed and coded by Alen Grakalic (http://cssglobe.com)
+*	brought to you by Templatica (http://templatica.com)
+*
+*/
+
+/* form 4 */
+
+	#form4{
+        text-align:left;
+		margin:1em 0;
+		padding-top:1.5em;
+		color:#246878;
+		width:350px; /* customize width, this form have fluid layout */
+		}
+	#form4 h3{
+		}		
+	#form4 fieldset{
+		margin:0;
+		padding:0;
+		border:none;	
+		padding-bottom:1em;
+		}		
+	#form4 legend{display:none;}	
+	#form4 p{margin:.5em 20px;}	
+	#form4 label{display:block;}	
+	#form4 input[type=text], #form4 textarea, #form4 select{		
+		width:302px;
+		border:1px solid #dfdfdf;
+		background:#fff;
+		padding:5px 3px;
+		}		
+	#form4 textarea{
+		height:125px;
+		overflow:auto;
+		}					
+	#form4 p.submit{
+		text-align:right;
+        padding-right:30px;
+		}	
+	#form4 input[type=submit]{
+            padding:5px;
+		}	
+	#form4 input[type=checkbox]{
+            float:left;
+		}    
+    			
+
+/* // form 4 */

@@ -1,0 +1,159 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Threading;
+
+using Google.Apis.Calendar.v3;
+using Google.Apis.Calendar.v3.Data;
+using Google.Apis.Services;
+using Google.Apis.Auth.OAuth2;
+using Google.Apis.Util.Store;
+using Google;
+
+namespace GraniteFortWorth_WebsiteApplication.admin
+{
+    public partial class GoogleCalendarV3 : System.Web.UI.Page
+    {
+        CalendarService service;
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void AuthButton_Click(object sender, EventArgs e)
+        {
+            UserCredential credential = GoogleWebAuthorizationBroker.AuthorizeAsync(
+                           new ClientSecrets
+                           {
+                               ClientId = "18000002748.apps.googleusercontent.com",
+                               ClientSecret = "MMuUh1Z7a9Yf0Kq9gwLdQwB1",
+                           },
+                           new[] { CalendarService.Scope.Calendar },
+                           "dhitt0327@gmail.com",
+                           CancellationToken.None).Result;
+
+            // Create the service.
+            service = new CalendarService(new BaseClientService.Initializer()
+            {
+                HttpClientInitializer = credential,
+                ApplicationName = "Calendar API Sample",
+            });
+
+            // Fetch the list of calendar list
+            IList<calendarlistentry>
+    list = service.CalendarList.List().Execute().Items;
+
+    // Display all calendars
+    DisplayList(list);
+
+    foreach (CalendarListEntry calendar in list)
+    {
+    // Display calendar's events
+    DisplayFirstCalendarEvents(calendar);
+    }
+
+    //Console.WriteLine("Press any key to continue...");
+    //Console.ReadKey();
+    }
+
+
+    // Displays all calendars
+    private void DisplayList(IList<calendarlistentry>
+        list)
+        {
+        string strResponse = "Lists of calendars: <br>";
+        foreach (CalendarListEntry item in list)
+        {
+        strResponse += "<br> " + item.Summary + ". Location: " + item.Location + ", TimeZone: " + item.TimeZone;
+        }
+        Response.Write(strResponse);
+        }
+
+        // Displays the calendar's events
+        private void DisplayFirstCalendarEvents(CalendarListEntry list)
+        {
+        string strResponse = String.Format(Environment.NewLine + "Maximum 5 first events from {0}:", list.Summary);
+        EventsResource.ListRequest requeust = service.Events.List(list.Id);
+
+        //Set MaxResults and TimeMin with sample values
+        requeust.MaxResults = 5;
+        requeust.TimeMin = new DateTime(2013, 10, 1, 20, 0, 0);
+
+        // Fetch the list of events
+        foreach (Event calendarEvent in requeust.Execute().Items)
+        {
+        strResponse += "<br> Summary: " + calendarEvent.Summary;
+        }
+        }
+
+        }
+        }
+
+
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+        var gfolder = System.Web.HttpContext.Current.Server.MapPath("/App_Data/MyGoogleStorage");
+
+        GoogleAuthorizationCodeFlow flow;
+        var assembly = Assembly.GetExecutingAssembly();
+        using (var stream = assembly.GetManifestResourceStream("client_secrets.json"))
+        {
+        flow = new GoogleAuthorizationCodeFlow(new GoogleAuthorizationCodeFlow.Initializer
+        {
+        DataStore = new FileDataStore(gfolder),
+        ClientSecretsStream = stream,
+        Scopes = new[] { CalendarService.Scope.CalendarReadonly}
+        });
+        }
+
+        var uri = Request.Url.ToString();
+        var code = Request["code"];
+        if (code != null)
+        {
+        var token = flow.ExchangeCodeForTokenAsync(UserId, code,
+        uri.Substring(0, uri.IndexOf("?")), CancellationToken.None).Result;
+
+        // Extract the right state.
+        var oauthState = AuthWebUtility.ExtracRedirectFromState(
+        flow.DataStore, UserId, Request["state"]).Result;
+        Response.Redirect(oauthState);
+        }
+        else
+        {
+        var result = new AuthorizationCodeWebApp(flow, uri, uri).AuthorizeAsync(UserId,
+        CancellationToken.None).Result;
+        if (result.RedirectUri != null)
+        {
+        // Redirect the user to the authorization server.
+        Response.Redirect(result.RedirectUri);
+        }
+        else
+        {
+        // The data store contains the user credential, so the user has been already authenticated.
+        service = new CalendarService(new BaseClientService.Initializer
+        {
+        ApplicationName = "Calendar API Sample",
+        HttpClientInitializer = result.Credential
+        });
+        }
+        }
+        }
+
+
+        UserCredential credential = GoogleWebAuthorizationBroker.AuthorizeAsync(
+        new  ClientSecrets {ClientId = ClientId, ClientSecret = ClientSecret },
+        new[] { CalendarService.Scope.Calendar },
+        "user", CancellationToken.None,
+        new FileDataStore(gFolder))
+        .Result;
+
+        service = new CalendarService(new BaseClientService.Initializer()
+        {
+        HttpClientInitializer = credential,
+        ApplicationName = ApplicationName,
+        });

@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+        <meta name="robots" content="noindex" />
+    <title></title>
+
+    <script>
+        var v = document.getElementById('measurevid');
+        v.addEventListener(
+            'play',
+            function () {
+                v.play();
+            },
+            false);
+
+        v.onclick = function () {
+            if (v.paused) {
+                v.play();
+            } else {
+                v.pause();
+            }
+
+            return false;
+        };
+    </script>
+
+<style>
+    body {
+        margin:0px 0px 0px 0px;
+    }
+
+    video{
+        width:100%;
+    }
+
+
+</style>
+
+</head>
+<body>
+    <video controls id="measurevid">
+        <source src="/Download/countertop_measure.mp4" />
+    </video>
+
+</body>
+</html>

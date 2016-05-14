@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<juiceboxgallery
+	galleryTitle="Gallery of Kitchens"
+>
+  <image imageURL="images/KitchenGallery/0.jpg"
+	thumbURL="images/KitchenGallery/thumb/0.jpg"
+	linkURL="images/KitchenGallery/KitchenGallery/0.jpg"
+	linkTarget="_blank">
+  </image>
+  <image imageURL="images/KitchenGallery/1.jpg"
+	thumbURL="images/KitchenGallery/thumb/1.jpg"
+	linkURL="images/KitchenGallery/KitchenGallery/1.jpg"
+	linkTarget="_blank">
+  </image>
+  <image imageURL="images/KitchenGallery/2.jpg"
+thumbURL="images/KitchenGallery/thumb/2.jpg"
+linkURL="images/KitchenGallery/KitchenGallery/2.jpg"
+linkTarget="_blank">
+  </image>
+  <image imageURL="images/KitchenGallery/3.jpg"
+thumbURL="images/KitchenGallery/thumb/3.jpg"
+linkURL="images/KitchenGallery/KitchenGallery/3.jpg"
+linkTarget="_blank">
+  </image>
+  <image imageURL="images/KitchenGallery/4.jpg"
+	thumbURL="images/KitchenGallery/thumb/4.jpg"
+	linkURL="images/KitchenGallery/4.jpg"
+	linkTarget="_blank">
+  </image>
+  <image imageURL="images/KitchenGallery/5.jpg"
+	thumbURL="images/KitchenGallery/thumb/5.jpg"
+	linkURL="images/KitchenGallery/5.jpg"
+	linkTarget="_blank">
+  </image>
+  <image imageURL="images/KitchenGallery/6.jpg"
+	thumbURL="images/KitchenGallery/thumb/6.jpg"
+	linkURL="images/KitchenGallery/6.jpg"
+	linkTarget="_blank">
+  </image>
+  <image imageURL="images/KitchenGallery/7.jpg"
+	thumbURL="images/KitchenGallery/thumb/7.jpg"
+	linkURL="images/KitchenGallery/7.jpg"
+	linkTarget="_blank">
+  </image>
+  <image imageURL="images/KitchenGallery/8.jpg"
+	thumbURL="images/KitchenGallery/thumb/8.jpg"
+	linkURL="images/KitchenGallery/8.jpg"
+	linkTarget="_blank">
+  </image>
+  <image imageURL="images/KitchenGallery/9.jpg"
+	thumbURL="images/KitchenGallery/thumb/9.jpg"
+	linkURL="images/KitchenGallery/9.jpg"
+	linkTarget="_blank">
+  </image>
+  <image imageURL="images/KitchenGallery/10.jpg"
+	thumbURL="images/KitchenGallery/thumb/10.jpg"
+	linkURL="images/KitchenGallery/10.jpg"
+	linkTarget="_blank">
+  </image>
+  <image imageURL="images/KitchenGallery/11.jpg"
+	thumbURL="images/KitchenGallery/thumb/11.jpg"
+	linkURL="images/KitchenGallery/11.jpg"
+	linkTarget="_blank">
+  </image>
+  <image imageURL="images/KitchenGallery/12.jpg"
+	thumbURL="images/KitchenGallery/thumb/12.jpg"
+	linkURL="images/KitchenGallery/12.jpg"
+	linkTarget="_blank">
+  </image>
+  <image imageURL="images/KitchenGallery/13.jpg"
+	thumbURL="images/KitchenGallery/thumb/13.jpg"
+	linkURL="images/KitchenGallery/13.jpg"
+	linkTarget="_blank">
+  </image>
+  <image imageURL="images/KitchenGallery/14.jpg"
+	thumbURL="images/KitchenGallery/thumb/14.jpg"
+	linkURL="images/KitchenGallery/14.jpg"
+	linkTarget="_blank">
+  </image>
+  <image imageURL="images/KitchenGallery/15.jpg"
+	thumbURL="images/KitchenGallery/thumb/15.jpg"
+	linkURL="images/KitchenGallery/15.jpg"
+	linkTarget="_blank">
+  </image>
+  <image imageURL="images/KitchenGallery/16.jpg"
+	thumbURL="images/KitchenGallery/thumb/16.jpg"
+	linkURL="images/KitchenGallery/16.jpg"
+	linkTarget="_blank">
+  </image>
+  <image imageURL="images/KitchenGallery/17.jpg"
+	thumbURL="images/KitchenGallery/thumb/17.jpg"
+	linkURL="images/KitchenGallery/17.jpg"
+	linkTarget="_blank">
+  </image>
+</juiceboxgallery>

@@ -1,0 +1,69 @@
+﻿        html {
+    margin: 0;
+    padding: 0;
+    }
+
+            body {
+        color: #333;
+        font-size: .85em;
+        font-family: 'Droid Sans', 'Segoe UI', Sans-Serif;
+    }
+
+   input, textarea {
+        border: 1px solid #e2e2e2;
+        background: #fff;
+        color: #333;
+        font-size: 1.2em;
+        margin: 5px 0 6px 0;
+        padding: 5px;
+        width: 300px;
+    }
+
+    textarea {
+        font-family: inherit;
+        width: 500px;
+    }
+    
+        input:focus, textarea:focus {
+            border: 1px solid #7ac0da;
+        }
+
+        input[type=checkbox] {
+            background: transparent;
+            border: inherit;
+            width: auto;
+        }
+        
+    input[type=submit], input[type=button], button {
+        background-color: #d3dce0;
+        border: 1px solid #787878;
+        cursor: pointer;
+        font-size: 1.2em;
+        font-weight: 600;
+        padding: 7px;
+        margin-right: 8px;
+        width: auto;
+    }
+
+    td input[type=submit], td input[type=button], td button {
+        font-size: 1em;
+        padding: 4px;
+        margin-right: 4px;
+    }
+
+    td input[type=image] {
+        padding: 0px;
+        margin-right: 0px;
+        width: auto;
+        border: none;
+        background-color:none;
+    }
+
+        td input, select {
+        border: 1px solid #e2e2e2;
+        background: #fff;
+        color: #333;
+        font-size: 1em;
+        padding: 0px;
+        margin: 0px;
+    }

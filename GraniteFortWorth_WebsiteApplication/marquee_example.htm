@@ -1,0 +1,82 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<title>Giva Labs - Marquee Example Page | Giva</title>
+
+	<!---// load jQuery from the GoogleAPIs CDN //--->
+	<script type="text/javascript" src="Scripts/jquery-1.7.1.js" ></script>
+	<script type="text/javascript" src="js/jquery.marquee.js"></script>
+
+	<link type="text/css" href="/css/docs.css" rel="stylesheet" media="all" />
+	<link type="text/css" href="/css/jquery.marquee.css" rel="stylesheet" title="default" media="all" />
+	
+	<style type="text/css">
+		h4, h5 {
+			margin-bottom: 0;
+		}
+	</style>
+
+	<script type="text/javascript">
+	<!--//
+	var use_debug = false;
+
+	function debug(){
+		if( use_debug && window.console && window.console.log ) console.log(arguments);
+	}
+
+	// on DOM ready
+	$(document).ready(function (){
+		$(".marquee").marquee({
+			loop: -1
+			// this callback runs when the marquee is initialized
+			, init: function ($marquee, options){
+				debug("init", arguments);
+
+				// shows how we can change the options at runtime
+				if( $marquee.is("#marquee2") ) options.yScroll = "bottom";
+			}
+			// this callback runs before a marquee is shown
+			, beforeshow: function ($marquee, $li){
+				debug("beforeshow", arguments);
+
+				// check to see if we have an author in the message (used in #marquee6)
+				var $author = $li.find(".author");
+				// move author from the item marquee-author layer and then fade it in
+				if( $author.length ){
+					$("#marquee-author").html("<span style='display:none;'>" + $author.html() + "</span>").find("> span").fadeIn(850);
+				}
+			}
+			// this callback runs when a has fully scrolled into view (from either top or bottom)
+			, show: function (){
+				debug("show", arguments);
+			}
+			// this callback runs when a after message has being shown
+			, aftershow: function ($marquee, $li){
+				debug("aftershow", arguments);
+
+				// find the author
+				var $author = $li.find(".author");
+				// hide the author
+				if( $author.length ) $("#marquee-author").find("> span").fadeOut(250);
+			}
+		});
+	});
+	
+
+	</script>
+</head>
+
+<body>
+<div class="examples">
+<h4>OUR WEEKEND SPECIALS!!!</h4>
+<ul id="marquee3" class="marquee">
+	<li>Lorem ipsum dolor sit amet.</li>
+	<li>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. <a href="Showrooms.aspx">Fusce tincidunt adipiscing,</a> massa.</li>
+	<li>Mauris ullamcorper euismod leo.</li>
+</ul>
+</div>
+
+</body>
+</html>

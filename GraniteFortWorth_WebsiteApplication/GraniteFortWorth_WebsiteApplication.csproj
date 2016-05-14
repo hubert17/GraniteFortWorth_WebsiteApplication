@@ -1,0 +1,1246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7448A378-8E16-4ECC-A29E-ED8E2357295F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GraniteFortWorth_WebsiteApplication</RootNamespace>
+    <AssemblyName>GraniteFortWorth_WebsiteApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Pdf">
+      <HintPath>..\..\..\..\..\_ONLINE JOBS PROJECT\DFW Granite_sharepoint\GraniteFortWorth_NewWebsite\GraniteFortWorth_NewWebsite\Bin\Aspose.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis, Version=1.9.0.26011, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Google.Apis.1.9.0\lib\net40\Google.Apis.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Auth, Version=1.9.0.26011, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Google.Apis.Auth.1.9.0\lib\net40\Google.Apis.Auth.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Auth.PlatformServices, Version=1.9.0.26016, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Google.Apis.Auth.1.9.0\lib\net40\Google.Apis.Auth.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Calendar.v3, Version=1.9.0.114, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Google.Apis.Calendar.v3.1.9.0.1140\lib\portable-net40+sl50+win+wpa81+wp80\Google.Apis.Calendar.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Core, Version=1.9.0.26010, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Google.Apis.Core.1.9.0\lib\portable-net40+sl50+win+wpa81+wp80\Google.Apis.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.PlatformServices, Version=1.9.0.26013, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Google.Apis.1.9.0\lib\net40\Google.Apis.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.GData.AccessControl, Version=2.1.0.0, Culture=neutral, PublicKeyToken=b4b8eb9a7afc8328, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\GraniteFortWorth_WebsiteApplication_xxxxx\bin\Google.GData.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.GData.Calendar, Version=2.1.0.0, Culture=neutral, PublicKeyToken=aa6748391206b888, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\GraniteFortWorth_WebsiteApplication_xxxxx\bin\Google.GData.Calendar.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.GData.Client, Version=2.1.0.0, Culture=neutral, PublicKeyToken=04a59ca9b0273830, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\GraniteFortWorth_WebsiteApplication_xxxxx\bin\Google.GData.Client.DLL</HintPath>
+    </Reference>
+    <Reference Include="Google.GData.Extensions, Version=2.1.0.0, Culture=neutral, PublicKeyToken=0b4c5df2ebf20876, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\GraniteFortWorth_WebsiteApplication_xxxxx\bin\Google.GData.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Threading.Tasks, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions.Desktop, Version=1.0.168.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.Desktop.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Nito.AspNetBackgroundTasks">
+      <HintPath>..\packages\Nito.AspNetBackgroundTasks.1.0.0\lib\net45\Nito.AspNetBackgroundTasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Recaptcha">
+      <HintPath>..\..\..\..\..\_ONLINE JOBS PROJECT\DFW Granite_sharepoint\GraniteFortWorth_NewWebsite\GraniteFortWorth_NewWebsite\Bin\Recaptcha.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Extensions, Version=2.2.28.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.28\lib\net45\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives, Version=4.2.28.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.28\lib\net45\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.1.7.1\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery.UI.Combined">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.UI.Combined.1.8.20\lib\net45\AspNet.ScriptManager.jQuery.UI.Combined.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax, Version=4.5.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.MSAjax.4.5.6\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms, Version=4.5.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.WebForms.4.5.6\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.1.1\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Membership.OpenAuth, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Membership.OpenAuth.1.0.0\lib\net45\Microsoft.AspNet.Membership.OpenAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.1.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.1.0\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.0.0\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Zlib.Portable, Version=1.10.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Zlib.Portable.1.10.0\lib\portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid\Zlib.Portable.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="admin\AngiesListEmailBody.html" />
+    <Content Include="admin\Attachment\Attach\Default.aspx" />
+    <Content Include="admin\CalendarInstall.aspx" />
+    <Content Include="admin\CreateJob.aspx" />
+    <Content Include="admin\css\demo.css" />
+    <Content Include="admin\css\demo_acc.css" />
+    <Content Include="admin\css\font-awesome.css" />
+    <Content Include="admin\css\fonts\BebasNeue-webfont.svg" />
+    <Content Include="admin\css\fonts\Dharma Type Font License.txt" />
+    <Content Include="admin\css\hcforms.css" />
+    <Content Include="admin\css\jquery.autocomplete.css" />
+    <Content Include="admin\css\normalize.css" />
+    <Content Include="admin\css\style-ie.css" />
+    <Content Include="admin\css\style-ie6.css" />
+    <Content Include="admin\css\style.css" />
+    <Content Include="admin\css\style3.css" />
+    <Content Include="admin\css\style_acc.css" />
+    <Content Include="admin\css\style_admin.css" />
+    <Content Include="admin\css\style_form.css" />
+    <Content Include="admin\css\style_iframe.css" />
+    <Content Include="admin\css\style_login.css" />
+    <Content Include="admin\Default.aspx" />
+    <Content Include="admin\EditJob.aspx" />
+    <Content Include="admin\FileUploader.aspx" />
+    <Content Include="admin\font\fontawesome-webfont.svg" />
+    <Content Include="admin\FormsAuthCS\Default.aspx" />
+    <Content Include="admin\FormsAuthCS\Logon.aspx" />
+    <Content Include="admin\GoogleCalendarV3.aspx" />
+    <Content Include="admin\ImageUploader.aspx" />
+    <Content Include="admin\Jobs-granite.aspx" />
+    <Content Include="admin\Jobs-info.aspx" />
+    <Content Include="admin\Jobs-measure.aspx" />
+    <Content Include="admin\Jobs-notes.aspx" />
+    <Content Include="admin\Jobs-payment.aspx" />
+    <Content Include="admin\Jobs-quote.aspx" />
+    <Content Include="admin\Jobs-service.aspx" />
+    <Content Include="admin\Jobs-sink.aspx" />
+    <Content Include="admin\Jobs-Summary.aspx" />
+    <Content Include="admin\js\jquery.autocomplete.js" />
+    <Content Include="admin\js\jquery.placeholder.min.js" />
+    <Content Include="admin\js\modernizr.custom.04022.js" />
+    <Content Include="admin\js\modernizr.custom.29473.js" />
+    <Content Include="admin\js\modernizr.custom.63321.js" />
+    <Content Include="admin\Login.aspx" />
+    <Content Include="admin\Manage-granite.aspx" />
+    <Content Include="admin\Manage-JobStatus.aspx" />
+    <Content Include="admin\Manage-services.aspx" />
+    <Content Include="admin\Manage-sink.aspx" />
+    <Content Include="admin\Misc-accounts.aspx" />
+    <Content Include="admin\Misc-assets.aspx" />
+    <Content Include="admin\Misc-assignedtos.aspx" />
+    <Content Include="admin\Misc-emailnotify.aspx" />
+    <Content Include="admin\Misc-leads.aspx" />
+    <Content Include="admin\Misc-salesman.aspx" />
+    <Content Include="admin\Misc-sinks.aspx" />
+    <Content Include="admin\Misc.aspx" />
+    <Content Include="admin\PrintQuote.aspx" />
+    <Content Include="admin\PrintQuoteWithGranite.aspx" />
+    <Content Include="admin\PrintWorkOrder.aspx" />
+    <Content Include="admin\References.aspx" />
+    <Content Include="admin\Sales-report-monthly.aspx" />
+    <Content Include="admin\Sales-report-yearly.aspx" />
+    <Content Include="admin\Settings.aspx" />
+    <Content Include="admin\SinkImageUploader.aspx" />
+    <Content Include="admin\sql-util.aspx" />
+    <Content Include="admin\StatusCabinetsReport.aspx" />
+    <Content Include="admin\StatusInstallReport.aspx" />
+    <Content Include="admin\StatusMeasureReport.aspx" />
+    <Content Include="admin\StatusQuoteReport.aspx" />
+    <Content Include="admin\StatusRepairReport.aspx" />
+    <Content Include="admin\StatusReport.aspx" />
+    <Content Include="admin\StatusTemplateReport.aspx" />
+    <Content Include="admin\stylesheets\base.css" />
+    <Content Include="admin\stylesheets\layout.css" />
+    <Content Include="admin\stylesheets\skeleton.css" />
+    <Content Include="admin\TaskReportByDate.aspx" />
+    <Content Include="admin\Weekend-specials.aspx" />
+    <Content Include="App_Online.htm" />
+    <Content Include="BathroomSinks.aspx" />
+    <Content Include="BlockEmail.aspx" />
+    <Content Include="BootstrapMailTemplate.html" />
+    <Content Include="Code dump.html" />
+    <Content Include="Contact.aspx" />
+    <Content Include="ContactThanks.aspx" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
+    <Content Include="Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Content\themes\base\jquery.ui.all.css" />
+    <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\themes\base\jquery.ui.base.css" />
+    <Content Include="Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\minified\jquery-ui.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.accordion.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.autocomplete.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.button.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.core.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.datepicker.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.dialog.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.progressbar.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.resizable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.selectable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="CountertopEstimator.aspx" />
+    <Content Include="CountertopEstimator.html" />
+    <Content Include="CountertopMeasure\expressinstall.swf" />
+    <Content Include="CountertopMeasure\global.js" />
+    <Content Include="CountertopMeasure\player.swf" />
+    <Content Include="CountertopMeasure\swfobject.js" />
+    <Content Include="css\coolthumbcaps.css" />
+    <Content Include="css\css3modal.angie.css" />
+    <Content Include="css\css3modal.css" />
+    <Content Include="css\docs.css" />
+    <Content Include="css\jpages.css" />
+    <Content Include="css\jquery.marquee.css" />
+    <Content Include="css\jquery.marquee.min.css" />
+    <Content Include="css\layout.css" />
+    <Content Include="css\printstyle.css" />
+    <Content Include="css\reset.css" />
+    <Content Include="css\style.css" />
+    <Content Include="Default2015.aspx" />
+    <Content Include="Default_mobile.aspx" />
+    <Content Include="FancyBox\css\jquery.fancybox-buttons.css" />
+    <Content Include="FancyBox\css\jquery.fancybox-thumbs.css" />
+    <Content Include="FancyBox\css\jquery.fancybox.css" />
+    <Content Include="FancyBox\images\fancybox\blank.gif" />
+    <Content Include="FancyBox\images\fancybox\fancybox_buttons.png" />
+    <Content Include="FancyBox\images\fancybox\fancybox_loading.gif" />
+    <Content Include="FancyBox\images\fancybox\fancybox_overlay.png" />
+    <Content Include="FancyBox\images\fancybox\fancybox_sprite.png" />
+    <Content Include="FancyBox\jquery.fancybox.js" />
+    <Content Include="FancyBox\js\jquery.fancybox-buttons.js" />
+    <Content Include="FancyBox\js\jquery.fancybox-media.js" />
+    <Content Include="FancyBox\js\jquery.fancybox-thumbs.js" />
+    <Content Include="FancyBox\js\jquery.fancybox.pack.js" />
+    <Content Include="FAQ.aspx" />
+    <Content Include="FreeEstimate.aspx" />
+    <Content Include="FreeEstimate.html" />
+    <Content Include="GabsHTML2PDF.aspx" />
+    <Content Include="GabsHTML2PDF.html" />
+    <Content Include="google5c0cb868c0856543.html" />
+    <Content Include="GraniteCare.aspx" />
+    <Content Include="GraniteColors.aspx" />
+    <Content Include="GraniteEdges.aspx" />
+    <Content Include="js\atooltip.jquery.js" />
+    <Content Include="js\cufon-replace.js" />
+    <Content Include="js\cufon-yui.js" />
+    <Content Include="js\Forum_400.font.js" />
+    <Content Include="js\html5.js" />
+    <Content Include="js\jPages.js" />
+    <Content Include="js\jPages.min.js" />
+    <Content Include="js\jquery-1.6.js" />
+    <Content Include="js\jquery.blockUI.js" />
+    <Content Include="js\jquery.easing.1.3.js" />
+    <Content Include="js\jquery.marquee.js" />
+    <Content Include="js\PIE.htc" />
+    <Content Include="js\script.js" />
+    <Content Include="js\tms-0.3.js" />
+    <Content Include="js\tms_presets.js" />
+    <Content Include="juicebox\config.xml" />
+    <Content Include="juicebox\images\KitchenGallery\0.JPG" />
+    <Content Include="juicebox\images\KitchenGallery\1.JPG" />
+    <Content Include="juicebox\images\KitchenGallery\10.JPG" />
+    <Content Include="juicebox\images\KitchenGallery\11.JPG" />
+    <Content Include="juicebox\images\KitchenGallery\12.JPG" />
+    <Content Include="juicebox\images\KitchenGallery\13.jpg" />
+    <Content Include="juicebox\images\KitchenGallery\14.jpg" />
+    <Content Include="juicebox\images\KitchenGallery\15.jpg" />
+    <Content Include="juicebox\images\KitchenGallery\16.jpg" />
+    <Content Include="juicebox\images\KitchenGallery\17.jpg" />
+    <Content Include="juicebox\images\KitchenGallery\2.JPG" />
+    <Content Include="juicebox\images\KitchenGallery\3.JPG" />
+    <Content Include="juicebox\images\KitchenGallery\4.JPG" />
+    <Content Include="juicebox\images\KitchenGallery\5.JPG" />
+    <Content Include="juicebox\images\KitchenGallery\6.JPG" />
+    <Content Include="juicebox\images\KitchenGallery\7.JPG" />
+    <Content Include="juicebox\images\KitchenGallery\8.JPG" />
+    <Content Include="juicebox\images\KitchenGallery\9.JPG" />
+    <Content Include="juicebox\images\KitchenGallery\thumb\0.jpg" />
+    <Content Include="juicebox\images\KitchenGallery\thumb\1.jpg" />
+    <Content Include="juicebox\images\KitchenGallery\thumb\10.jpg" />
+    <Content Include="juicebox\images\KitchenGallery\thumb\11.jpg" />
+    <Content Include="juicebox\images\KitchenGallery\thumb\12.jpg" />
+    <Content Include="juicebox\images\KitchenGallery\thumb\13.jpg" />
+    <Content Include="juicebox\images\KitchenGallery\thumb\14.jpg" />
+    <Content Include="juicebox\images\KitchenGallery\thumb\15.jpg" />
+    <Content Include="juicebox\images\KitchenGallery\thumb\16.jpg" />
+    <Content Include="juicebox\images\KitchenGallery\thumb\17.jpg" />
+    <Content Include="juicebox\images\KitchenGallery\thumb\2.jpg" />
+    <Content Include="juicebox\images\KitchenGallery\thumb\3.jpg" />
+    <Content Include="juicebox\images\KitchenGallery\thumb\4.jpg" />
+    <Content Include="juicebox\images\KitchenGallery\thumb\5.jpg" />
+    <Content Include="juicebox\images\KitchenGallery\thumb\6.jpg" />
+    <Content Include="juicebox\images\KitchenGallery\thumb\7.jpg" />
+    <Content Include="juicebox\images\KitchenGallery\thumb\8.jpg" />
+    <Content Include="juicebox\images\KitchenGallery\thumb\9.jpg" />
+    <Content Include="juicebox\index.html" />
+    <Content Include="juicebox\jbcore\classic\img\assets.gif" />
+    <Content Include="juicebox\jbcore\classic\img\assets.png" />
+    <Content Include="juicebox\jbcore\classic\img\caption-bg.png" />
+    <Content Include="juicebox\jbcore\classic\img\jb001 - Copy.png" />
+    <Content Include="juicebox\jbcore\classic\img\jb001.png" />
+    <Content Include="juicebox\jbcore\classic\img\spinner.gif" />
+    <Content Include="juicebox\jbcore\classic\theme-ie6.css" />
+    <Content Include="juicebox\jbcore\classic\theme.css" />
+    <Content Include="juicebox\jbcore\full.html" />
+    <Content Include="juicebox\jbcore\juicebox.js" />
+    <Content Include="KitchenGallery.aspx" />
+    <Content Include="LINQ2DS.aspx" />
+    <Content Include="MainPage.aspx" />
+    <Content Include="MarbleColors.aspx" />
+    <Content Include="marquee_example.htm" />
+    <Content Include="OnlineQuote-custinfo.aspx" />
+    <Content Include="OnlineQuote-edge.aspx" />
+    <Content Include="OnlineQuote-granite-iframe.html" />
+    <Content Include="OnlineQuote-granite.aspx" />
+    <Content Include="OnlineQuote-info.aspx" />
+    <Content Include="OnlineQuote-measurement.aspx" />
+    <Content Include="OnlineQuote-promo.aspx" />
+    <Content Include="OnlineQuote-services.aspx" />
+    <Content Include="OnlineQuote-sinks.aspx" />
+    <Content Include="OnlineQuote-success.aspx" />
+    <Content Include="OnlineQuote-summary.aspx" />
+    <Content Include="OnlineQuote-summaryhtmlprint.aspx" />
+    <Content Include="OnlineQuote-summaryprint.aspx" />
+    <Content Include="onlinequote\Default.aspx" />
+    <Content Include="packages.config" />
+    <Content Include="contact.ashx" />
+    <Content Include="QUOTEWG_DFW-Wholesale-Granite.aspx" />
+    <Content Include="reveal_demo.html" />
+    <Content Include="robots.txt" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Scripts\jquery-1.4.4.min.js" />
+    <Content Include="Scripts\jQuery.pagePeel.1.2.1.js" />
+    <Content Include="Scripts\jquery.peelback.js" />
+    <Content Include="sitemapmobile.xml" />
+    <Content Include="wowslider\arrows.png" />
+    <Content Include="wowslider\bg.png" />
+    <Content Include="wowslider\bullet.png" />
+    <Content Include="wowslider\jquery.js" />
+    <Content Include="wowslider\script.js" />
+    <Content Include="wowslider\style.css" />
+    <Content Include="wowslider\style2.css" />
+    <Content Include="wowslider\triangle.png" />
+    <Content Include="wowslider\wowslider.js" />
+    <Content Include="FancyBox\helpers\Thumbs.db" />
+    <Content Include="js\PIE.php" />
+    <Content Include="juicebox\thumbs\Thumbs.db" />
+    <Content Include="admin\css\fonts\BebasNeue-webfont.eot" />
+    <Content Include="admin\css\fonts\BebasNeue-webfont.ttf" />
+    <Content Include="admin\css\fonts\BebasNeue-webfont.woff" />
+    <Content Include="admin\font\fontawesome-webfont.eot" />
+    <Content Include="admin\font\fontawesome-webfont.ttf" />
+    <Content Include="admin\font\fontawesome-webfont.woff" />
+    <Content Include="admin\RequestCustomerReview.ashx" />
+    <Content Include="admin\FormsAuthCS\web.config" />
+    <Content Include="admin\HandlerTaskDateSearch.ashx" />
+    <Content Include="admin\client_secrets.json" />
+    <None Include="Properties\PublishProfiles\granitesouthlake.com - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\granitesouthlake.com - Web Deploy.pubxml" />
+    <Content Include="RedirectToQuote.ashx" />
+    <None Include="Scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="QUOTE_DFW-Wholesale-Granite.aspx" />
+    <Content Include="RedirectionCode.txt" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\jquery-1.7.1.js" />
+    <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <None Include="Scripts\jquery-1.8.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.8.2.js" />
+    <Content Include="Scripts\jquery-1.8.2.min.js" />
+    <Content Include="Scripts\jquery-1.9.0.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.24.js" />
+    <Content Include="Scripts\jquery-ui-1.8.24.min.js" />
+    <Content Include="Scripts\jquery.mousewheel-3.0.6.pack.js" />
+    <Content Include="Scripts\modernizr-2.5.3.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Default.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Showrooms.aspx" />
+    <Content Include="Sinks.aspx" />
+    <Content Include="sitemap.xml" />
+    <Content Include="Testimonials.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Bundle.config" />
+    <Content Include="Site.Mobile.Master" />
+    <Content Include="SiteClassic.Master" />
+    <Content Include="wowslider\Thumbs.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin\Attachment\Attach\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Attachment\Attach\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\CalendarInstall.aspx.cs">
+      <DependentUpon>CalendarInstall.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\CalendarInstall.aspx.designer.cs">
+      <DependentUpon>CalendarInstall.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\CreateJob.aspx.cs">
+      <DependentUpon>CreateJob.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\CreateJob.aspx.designer.cs">
+      <DependentUpon>CreateJob.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\EditJob.aspx.cs">
+      <DependentUpon>EditJob.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\EditJob.aspx.designer.cs">
+      <DependentUpon>EditJob.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\FileUploader.aspx.cs">
+      <DependentUpon>FileUploader.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\FileUploader.aspx.designer.cs">
+      <DependentUpon>FileUploader.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\GoogleCalendarV3.aspx.cs">
+      <DependentUpon>GoogleCalendarV3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\GoogleCalendarV3.aspx.designer.cs">
+      <DependentUpon>GoogleCalendarV3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\HandlerTaskDateSearch.ashx.cs">
+      <DependentUpon>HandlerTaskDateSearch.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\ImageUploader.aspx.cs">
+      <DependentUpon>ImageUploader.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\ImageUploader.aspx.designer.cs">
+      <DependentUpon>ImageUploader.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Jobs-granite.aspx.cs">
+      <DependentUpon>Jobs-granite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Jobs-granite.aspx.designer.cs">
+      <DependentUpon>Jobs-granite.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Jobs-info.aspx.cs">
+      <DependentUpon>Jobs-info.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Jobs-info.aspx.designer.cs">
+      <DependentUpon>Jobs-info.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Jobs-measure.aspx.cs">
+      <DependentUpon>Jobs-measure.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Jobs-measure.aspx.designer.cs">
+      <DependentUpon>Jobs-measure.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Jobs-notes.aspx.cs">
+      <DependentUpon>Jobs-notes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Jobs-notes.aspx.designer.cs">
+      <DependentUpon>Jobs-notes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Jobs-payment.aspx.cs">
+      <DependentUpon>Jobs-payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Jobs-payment.aspx.designer.cs">
+      <DependentUpon>Jobs-payment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Jobs-quote.aspx.cs">
+      <DependentUpon>Jobs-quote.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Jobs-quote.aspx.designer.cs">
+      <DependentUpon>Jobs-quote.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Jobs-service.aspx.cs">
+      <DependentUpon>Jobs-service.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Jobs-service.aspx.designer.cs">
+      <DependentUpon>Jobs-service.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Jobs-sink.aspx.cs">
+      <DependentUpon>Jobs-sink.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Jobs-sink.aspx.designer.cs">
+      <DependentUpon>Jobs-sink.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Jobs-Summary.aspx.cs">
+      <DependentUpon>Jobs-Summary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Jobs-Summary.aspx.designer.cs">
+      <DependentUpon>Jobs-Summary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\LoginAttempt.cs" />
+    <Compile Include="admin\Manage-granite.aspx.cs">
+      <DependentUpon>Manage-granite.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Manage-granite.aspx.designer.cs">
+      <DependentUpon>Manage-granite.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Manage-JobStatus.aspx.cs">
+      <DependentUpon>Manage-JobStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Manage-JobStatus.aspx.designer.cs">
+      <DependentUpon>Manage-JobStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Manage-services.aspx.cs">
+      <DependentUpon>Manage-services.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Manage-services.aspx.designer.cs">
+      <DependentUpon>Manage-services.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Manage-sink.aspx.cs">
+      <DependentUpon>Manage-sink.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Manage-sink.aspx.designer.cs">
+      <DependentUpon>Manage-sink.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Misc-accounts.aspx.cs">
+      <DependentUpon>Misc-accounts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Misc-accounts.aspx.designer.cs">
+      <DependentUpon>Misc-accounts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Misc-assets.aspx.cs">
+      <DependentUpon>Misc-assets.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Misc-assets.aspx.designer.cs">
+      <DependentUpon>Misc-assets.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Misc-assignedtos.aspx.cs">
+      <DependentUpon>Misc-assignedtos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Misc-assignedtos.aspx.designer.cs">
+      <DependentUpon>Misc-assignedtos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Misc-emailnotify.aspx.cs">
+      <DependentUpon>Misc-emailnotify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Misc-emailnotify.aspx.designer.cs">
+      <DependentUpon>Misc-emailnotify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Misc-leads.aspx.cs">
+      <DependentUpon>Misc-leads.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Misc-leads.aspx.designer.cs">
+      <DependentUpon>Misc-leads.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Misc-salesman.aspx.cs">
+      <DependentUpon>Misc-salesman.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Misc-salesman.aspx.designer.cs">
+      <DependentUpon>Misc-salesman.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Misc-sinks.aspx.cs">
+      <DependentUpon>Misc-sinks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Misc-sinks.aspx.designer.cs">
+      <DependentUpon>Misc-sinks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Misc.aspx.cs">
+      <DependentUpon>Misc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Misc.aspx.designer.cs">
+      <DependentUpon>Misc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\PrintQuote.aspx.cs">
+      <DependentUpon>PrintQuote.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\PrintQuote.aspx.designer.cs">
+      <DependentUpon>PrintQuote.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\PrintQuoteWithGranite.aspx.cs">
+      <DependentUpon>PrintQuoteWithGranite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\PrintQuoteWithGranite.aspx.designer.cs">
+      <DependentUpon>PrintQuoteWithGranite.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\PrintWorkOrder.aspx.cs">
+      <DependentUpon>PrintWorkOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\PrintWorkOrder.aspx.designer.cs">
+      <DependentUpon>PrintWorkOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\References.aspx.cs">
+      <DependentUpon>References.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\References.aspx.designer.cs">
+      <DependentUpon>References.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\RequestCustomerReview.ashx.cs">
+      <DependentUpon>RequestCustomerReview.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Sales-report-monthly.aspx.cs">
+      <DependentUpon>Sales-report-monthly.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Sales-report-monthly.aspx.designer.cs">
+      <DependentUpon>Sales-report-monthly.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Sales-report-yearly.aspx.cs">
+      <DependentUpon>Sales-report-yearly.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Sales-report-yearly.aspx.designer.cs">
+      <DependentUpon>Sales-report-yearly.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Settings.aspx.cs">
+      <DependentUpon>Settings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Settings.aspx.designer.cs">
+      <DependentUpon>Settings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\SinkImageUploader.aspx.cs">
+      <DependentUpon>SinkImageUploader.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\SinkImageUploader.aspx.designer.cs">
+      <DependentUpon>SinkImageUploader.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\sql-util.aspx.cs">
+      <DependentUpon>sql-util.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\sql-util.aspx.designer.cs">
+      <DependentUpon>sql-util.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\StatusCabinetsReport.aspx.cs">
+      <DependentUpon>StatusCabinetsReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\StatusCabinetsReport.aspx.designer.cs">
+      <DependentUpon>StatusCabinetsReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\StatusInstallReport.aspx.cs">
+      <DependentUpon>StatusInstallReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\StatusInstallReport.aspx.designer.cs">
+      <DependentUpon>StatusInstallReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\StatusMeasureReport.aspx.cs">
+      <DependentUpon>StatusMeasureReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\StatusMeasureReport.aspx.designer.cs">
+      <DependentUpon>StatusMeasureReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\StatusQuoteReport.aspx.cs">
+      <DependentUpon>StatusQuoteReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\StatusQuoteReport.aspx.designer.cs">
+      <DependentUpon>StatusQuoteReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\StatusRepairReport.aspx.cs">
+      <DependentUpon>StatusRepairReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\StatusRepairReport.aspx.designer.cs">
+      <DependentUpon>StatusRepairReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\StatusReport.aspx.cs">
+      <DependentUpon>StatusReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\StatusReport.aspx.designer.cs">
+      <DependentUpon>StatusReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\StatusTemplateReport.aspx.cs">
+      <DependentUpon>StatusTemplateReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\StatusTemplateReport.aspx.designer.cs">
+      <DependentUpon>StatusTemplateReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\TaskReportByDate.aspx.cs">
+      <DependentUpon>TaskReportByDate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\TaskReportByDate.aspx.designer.cs">
+      <DependentUpon>TaskReportByDate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Weekend-specials.aspx.cs">
+      <DependentUpon>Weekend-specials.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Weekend-specials.aspx.designer.cs">
+      <DependentUpon>Weekend-specials.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\GoogleCalendarAppointmentModel.cs" />
+    <Compile Include="App_Code\GoogleCalendarManager.cs" />
+    <Content Include="App_Code\QuoteModel.cs" />
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\AuthConfig.cs" />
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BathroomSinks.aspx.cs">
+      <DependentUpon>BathroomSinks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BathroomSinks.aspx.designer.cs">
+      <DependentUpon>BathroomSinks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BlockEmail.aspx.cs">
+      <DependentUpon>BlockEmail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BlockEmail.aspx.designer.cs">
+      <DependentUpon>BlockEmail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContactThanks.aspx.cs">
+      <DependentUpon>ContactThanks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContactThanks.aspx.designer.cs">
+      <DependentUpon>ContactThanks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CountertopEstimator.aspx.cs">
+      <DependentUpon>CountertopEstimator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CountertopEstimator.aspx.designer.cs">
+      <DependentUpon>CountertopEstimator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default2015.aspx.cs">
+      <DependentUpon>Default2015.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default2015.aspx.designer.cs">
+      <DependentUpon>Default2015.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default_mobile.aspx.cs">
+      <DependentUpon>Default_mobile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default_mobile.aspx.designer.cs">
+      <DependentUpon>Default_mobile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FAQ.aspx.cs">
+      <DependentUpon>FAQ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FAQ.aspx.designer.cs">
+      <DependentUpon>FAQ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FreeEstimate.aspx.cs">
+      <DependentUpon>FreeEstimate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FreeEstimate.aspx.designer.cs">
+      <DependentUpon>FreeEstimate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GabsHTML2PDF.aspx.cs">
+      <DependentUpon>GabsHTML2PDF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GabsHTML2PDF.aspx.designer.cs">
+      <DependentUpon>GabsHTML2PDF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="GraniteCare.aspx.cs">
+      <DependentUpon>GraniteCare.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GraniteCare.aspx.designer.cs">
+      <DependentUpon>GraniteCare.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GraniteColors.aspx.cs">
+      <DependentUpon>GraniteColors.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GraniteColors.aspx.designer.cs">
+      <DependentUpon>GraniteColors.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GraniteEdges.aspx.cs">
+      <DependentUpon>GraniteEdges.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GraniteEdges.aspx.designer.cs">
+      <DependentUpon>GraniteEdges.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KitchenGallery.aspx.cs">
+      <DependentUpon>KitchenGallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KitchenGallery.aspx.designer.cs">
+      <DependentUpon>KitchenGallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LINQ2DS.aspx.cs">
+      <DependentUpon>LINQ2DS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LINQ2DS.aspx.designer.cs">
+      <DependentUpon>LINQ2DS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.aspx.cs">
+      <DependentUpon>MainPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainPage.aspx.designer.cs">
+      <DependentUpon>MainPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MarbleColors.aspx.cs">
+      <DependentUpon>MarbleColors.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MarbleColors.aspx.designer.cs">
+      <DependentUpon>MarbleColors.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineQuote-custinfo.aspx.cs">
+      <DependentUpon>OnlineQuote-custinfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OnlineQuote-custinfo.aspx.designer.cs">
+      <DependentUpon>OnlineQuote-custinfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineQuote-edge.aspx.cs">
+      <DependentUpon>OnlineQuote-edge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OnlineQuote-edge.aspx.designer.cs">
+      <DependentUpon>OnlineQuote-edge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineQuote-granite.aspx.cs">
+      <DependentUpon>OnlineQuote-granite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OnlineQuote-granite.aspx.designer.cs">
+      <DependentUpon>OnlineQuote-granite.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineQuote-info.aspx.cs">
+      <DependentUpon>OnlineQuote-info.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OnlineQuote-info.aspx.designer.cs">
+      <DependentUpon>OnlineQuote-info.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineQuote-measurement.aspx.cs">
+      <DependentUpon>OnlineQuote-measurement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OnlineQuote-measurement.aspx.designer.cs">
+      <DependentUpon>OnlineQuote-measurement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineQuote-promo.aspx.cs">
+      <DependentUpon>OnlineQuote-promo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OnlineQuote-promo.aspx.designer.cs">
+      <DependentUpon>OnlineQuote-promo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineQuote-services.aspx.cs">
+      <DependentUpon>OnlineQuote-services.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OnlineQuote-services.aspx.designer.cs">
+      <DependentUpon>OnlineQuote-services.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineQuote-sinks.aspx.cs">
+      <DependentUpon>OnlineQuote-sinks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OnlineQuote-sinks.aspx.designer.cs">
+      <DependentUpon>OnlineQuote-sinks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineQuote-success.aspx.cs">
+      <DependentUpon>OnlineQuote-success.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OnlineQuote-success.aspx.designer.cs">
+      <DependentUpon>OnlineQuote-success.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineQuote-summary.aspx.cs">
+      <DependentUpon>OnlineQuote-summary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OnlineQuote-summary.aspx.designer.cs">
+      <DependentUpon>OnlineQuote-summary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineQuote-summaryhtmlprint.aspx.cs">
+      <DependentUpon>OnlineQuote-summaryhtmlprint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OnlineQuote-summaryhtmlprint.aspx.designer.cs">
+      <DependentUpon>OnlineQuote-summaryhtmlprint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineQuote-summaryprint.aspx.cs">
+      <DependentUpon>OnlineQuote-summaryprint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OnlineQuote-summaryprint.aspx.designer.cs">
+      <DependentUpon>OnlineQuote-summaryprint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="onlinequote\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="onlinequote\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QUOTEWG_DFW-Wholesale-Granite.aspx.cs">
+      <DependentUpon>QUOTEWG_DFW-Wholesale-Granite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QUOTEWG_DFW-Wholesale-Granite.aspx.designer.cs">
+      <DependentUpon>QUOTEWG_DFW-Wholesale-Granite.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QUOTE_DFW-Wholesale-Granite.aspx.cs">
+      <DependentUpon>QUOTE_DFW-Wholesale-Granite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QUOTE_DFW-Wholesale-Granite.aspx.designer.cs">
+      <DependentUpon>QUOTE_DFW-Wholesale-Granite.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RedirectToQuote.ashx.cs">
+      <DependentUpon>RedirectToQuote.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Showrooms.aspx.cs">
+      <DependentUpon>Showrooms.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Showrooms.aspx.designer.cs">
+      <DependentUpon>Showrooms.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sinks.aspx.cs">
+      <DependentUpon>Sinks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sinks.aspx.designer.cs">
+      <DependentUpon>Sinks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.designer.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SiteClassic.Master.cs">
+      <DependentUpon>SiteClassic.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteClassic.Master.designer.cs">
+      <DependentUpon>SiteClassic.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SiteMaster2015.Master.cs">
+      <DependentUpon>SiteMaster2015.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteMaster2015.Master.designer.cs">
+      <DependentUpon>SiteMaster2015.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Testimonials.aspx.cs">
+      <DependentUpon>Testimonials.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Testimonials.aspx.designer.cs">
+      <DependentUpon>Testimonials.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="FancyBox\images\chimps\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SiteMaster2015.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="QUOTE_DFW-Wholesale-Granite.aspx.resx">
+      <DependentUpon>QUOTE_DFW-Wholesale-Granite.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:3798/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

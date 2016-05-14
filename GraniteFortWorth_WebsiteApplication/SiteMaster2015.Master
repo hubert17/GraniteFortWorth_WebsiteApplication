@@ -1,0 +1,228 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SiteMaster2015.master.cs" Inherits="GraniteFortWorth_WebsiteApplication.SiteMaster2015" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8">
+    <title>VOLARE - Diving, Sailing, Trekking site template</title>
+    <meta name="description" content="">
+    <meta name="author" content="Ansonika">
+
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- CSS -->
+    <link href="/SiteMaster2015/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/SiteMaster2015/css/superfish.css" rel="stylesheet">
+    <link href="/SiteMaster2015/css/style.css" rel="stylesheet">
+    <link href="/SiteMaster2015/fontello/css/fontello.css" rel="stylesheet">
+
+    <!-- JQUERY -->
+    <script src="/SiteMaster2015/js/jquery-1.10.2.min.js"></script>    
+
+    <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+<form id="form1" runat="server">
+    <header>
+    <div class="container">
+	    <div class="row">
+		    <div class="col-md-3 col-sm-3 col-xs-3">
+			    <a href="index-2.html" id="logo">Volare</a>
+		    </div>
+		    <div class="col-md-9 col-sm-9 col-xs-9">
+			    <div class="pull-right hidden-xs" id="phone">Call Us <strong>800 924 651</strong></div>
+                <ul id="top_nav">
+                    <li><a href="#" data-toggle="modal" data-target="#weathermodal"><i class="icon-sun-1"></i> Weather forecast</a></li>
+                     <li class="hidden-xs"><a href="http://themeforest.net/item/volare-trekking-sailing-diving-template/8047905?ref=Ansonika" target="_blank">Purchase this template</a></li>
+                </ul>
+		    </div>
+	    </div>
+    </div>
+    </header><!-- End header -->
+
+    <nav>
+    <div class="container" id="menu_container">
+	    <div class="row">
+		    <div class="col-md-12">
+			    <div id="mobnav-btn"></div>
+			    <ul class="sf-menu sf-js-enabled sf-arrows">
+                    <li><a href="booking.html">Booking</a></li>
+				    <li><a href="contacts.html">Contacts</a></li>
+                    <li><a href="booking.html">Booking</a></li>
+				    <li><a href="contacts.html">Contacts</a></li>
+			    </ul>
+                 <!-- End language selector -->
+             </div><!-- End col md 12 -->
+        </div><!-- End row -->
+      </div> <!-- End menu_container -->
+    </nav><!-- End nav menu -->
+
+    <div class="container">
+    <!-- End slider -->
+    
+	    <div class="row">
+		    <div class="col-md-9 border">
+			    <ol class="breadcrumb">
+				    <li><a href="index-2.html">Home</a></li>
+				    <li class="active">Active page</li>
+			    </ol>
+			    <h1>Gallery</h1>
+			    <p class="lead">
+				    Lorem ipsum dolor sit amet, convenire definiebas et sea, vim cu nibh pertinax intellegat, putent phaedrum omittantur an est.
+			    </p>
+			    <hr>
+            
+			    <div id="links">
+				    <div class="row">
+					    <div class="col-md-4 col-sm-4 col-xs-6 picture">
+						    <a href="img/gallery/1.jpg" title="Title" data-gallery="">
+						    <span class="magnify" style="opacity: 1; display: inline;"></span>
+						    <img src="img/gallery/1.jpg" alt="" class="img-responsive">
+						    </a>
+					    </div>
+					    <div class="col-md-4 col-sm-4 col-xs-6 picture">
+						    <a href="img/gallery/2.jpg" title="Title" data-gallery="">
+						    <span class="magnify" style="opacity: 0; display: inline;"></span>
+						    <img src="img/gallery/2.jpg" alt="" class="img-responsive">
+						    </a>
+					    </div>
+					    <div class="col-md-4 col-sm-4 col-xs-6 picture">
+						    <a href="img/gallery/3.jpg" title="Title" data-gallery="">
+						    <span class="magnify" style="opacity: 0; display: inline;"></span>
+						    <img src="img/gallery/3.jpg" alt="" class="img-responsive">
+						    </a>
+					    </div>
+					    <div class="col-md-4 col-sm-4 col-xs-6 picture">
+						    <a href="img/gallery/4.jpg" title="Title" data-gallery="">
+						    <span class="magnify" style="opacity: 0;"></span>
+						    <img src="img/gallery/4.jpg" alt="" class="img-responsive">
+						    </a>
+					    </div>
+					    <div class="col-md-4 col-sm-4 col-xs-6 picture">
+						    <a href="img/gallery/11.html" title="Title" data-gallery="">
+						    <span class="magnify" style="opacity: 0; display: inline;"></span>
+						    <img src="img/gallery/5.jpg" alt="" class="img-responsive">
+						    </a>
+					    </div>
+					    <div class="col-md-4 col-sm-4 col-xs-6 picture">
+						    <a href="img/gallery/10.html" title="Title" data-gallery="">
+						    <span class="magnify" style="opacity: 0;"></span>
+						    <img src="img/gallery/6.jpg" alt="" class="img-responsive">
+						    </a>
+					    </div>
+					    <div class="col-md-4 col-sm-4 col-xs-6 picture">
+						    <a href="img/gallery/7.jpg" title="Title" data-gallery="">
+						    <span class="magnify" style="opacity: 0; display: inline;"></span>
+						    <img src="img/gallery/7.jpg" alt="" class="img-responsive">
+						    </a>
+					    </div>
+					    <div class="col-md-4 col-sm-4 col-xs-6 picture">
+						    <a href="img/gallery/8.html" title="Title" data-gallery="">
+						    <span class="magnify" style="opacity: 0; display: inline;"></span>
+						    <img src="img/gallery/3.jpg" alt="" class="img-responsive">
+						    </a>
+					    </div>
+					    <div class="col-md-4 col-sm-4 col-xs-6 picture">
+						    <a href="img/gallery/9.html" title="Title" data-gallery="">
+						    <span class="magnify" style="opacity: 0; display: inline;"></span>
+						    <img src="img/gallery/4.jpg" alt="" class="img-responsive">
+						    </a>
+					    </div>
+				    </div><!-- End row -->
+			    </div>
+
+                <div class="row">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+                    </asp:ContentPlaceHolder>
+                </div>
+		    </div><!-- End col-md-8 -->
+        
+		    <!-- End col-md-3 -->
+	    </div><!-- End row -->
+    </div><!-- End container -->
+
+    <footer>
+
+    <div class="container">
+	    <div class="row">
+        <div class="col-md-4 col-sm-6 footer_nav">
+        	    <h4>Quick links</h4>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Booking</a></li>
+                    <li><a href="#">Top Hiking</a></li>
+                    <li><a href="#">Special offer</a></li>
+                    <li><a href="#">Hiking area</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </div> 
+    	    <div class="col-md-4 col-sm-6" id="contact_footer">
+        	    <h4>Contacts</h4>
+                <p>Feel free to call us or send a message, we will reply shortly.</p>
+                <ul>
+                    <li><i class="icon-home"></i>11 Fifth Ave - New Jork, US</li>
+                    <li><i class="icon-phone"></i> + 61 (2) 8093 3400 </li>
+                    <li><i class="icon-email"></i> <a href="#">info@domain.com<script type="text/javascript">
+                                                                                  /* <![CDATA[ */
+                                                                                  (function () { try { var s, a, i, j, r, c, l, b = document.getElementsByTagName("script"); l = b[b.length - 1].previousSibling; a = l.getAttribute('data-cfemail'); if (a) { s = ''; r = parseInt(a.substr(0, 2), 16); for (j = 2; a.length - j; j += 2) { c = parseInt(a.substr(j, 2), 16) ^ r; s += String.fromCharCode(c); } s = document.createTextNode(s); l.parentNode.replaceChild(s, l); } } catch (e) { } })();
+                                                                                  /* ]]> */
+    </script></a></li>
+		       </ul>
+            </div>
+            <div class="col-md-4 col-sm-12">
+            <h4>Follow us</h4>
+            <ul id="follow_us">
+				    <li><a href="#"><i class="icon-facebook"></i></a></li>
+				    <li><a href="#"><i class="icon-twitter"></i></a></li>
+				    <li><a href="#"><i class=" icon-google"></i></a></li>
+			    </ul>
+            </div>
+        </div><!-- End row -->
+        <hr class="rope_2">
+        <div class="row">
+            <div class="col-md-12 text-center">
+        	    <p id="copy">Copyright © 2014<br><strong>Address:</strong> 11 Fifth Ave - NJ, US - <strong>Email:</strong> <a href="#">info@domain.com<script type="text/javascript">
+        	                                                                                                                                              /* <![CDATA[ */
+        	                                                                                                                                              (function () { try { var s, a, i, j, r, c, l, b = document.getElementsByTagName("script"); l = b[b.length - 1].previousSibling; a = l.getAttribute('data-cfemail'); if (a) { s = ''; r = parseInt(a.substr(0, 2), 16); for (j = 2; a.length - j; j += 2) { c = parseInt(a.substr(j, 2), 16) ^ r; s += String.fromCharCode(c); } s = document.createTextNode(s); l.parentNode.replaceChild(s, l); } } catch (e) { } })();
+        	                                                                                                                                              /* ]]> */
+    </script></a>  - <strong>Telephone:</strong> + 61 (2) 8093 3400 </p>
+            </div>
+        </div><!-- End row -->
+        </div><!-- End container -->
+    </footer><!-- End footer -->
+
+    <div id="toTop" style="display: none;">Back to top</div>
+
+
+
+</form>
+
+<!-- OTHER JS -->    
+<script src="/SiteMaster2015/js/superfish.js"></script>
+<script src="/SiteMaster2015/js/retina.min.js"></script>
+<script src="/SiteMaster2015/js/bootstrap.js"></script>
+<script src="/SiteMaster2015/assets/validate.js"></script> 
+ 
+<script src="/SiteMaster2015/js/jquery.placeholder.js"></script>
+<script src="/SiteMaster2015/js/functions.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+
+           html {color: #777 !important;}
+
+           .centerHeader {
+               width:600px;
+               margin-left:auto;
+               margin-right:auto;
+               text-align:center;
+           }
+
+
+          .hcform1 {
+	        width: 450px;
+	        overflow: hidden;
+            margin-bottom:15px;
+            margin-left:auto;
+            margin-right:auto;
+            text-align:left;
+            margin-top:5px;
+        }
+
+          .hcformtitle {
+              padding-left:10px;
+	        line-height: 16px;
+	        font-size: 13px;
+	        font-weight: bold;
+	        width: 430px;
+            font-family: 'Droid Sans', "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+            text-align:left;
+        }
+
+
+        .one-column-emphasis
+        {
+            font-family: 'Droid Sans', "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	        font-size: 12px;
+	        margin-left: 0px;
+	        width: 600px;
+	        border-collapse: collapse;
+        }
+        .one-column-emphasis th
+        {
+	        font-size: 14px;
+	        font-weight:bold;
+	        padding-left:5px;
+            padding-right:5px;
+        }
+        .one-column-emphasis td
+        {
+	        padding-left:5px;
+            padding-right:5px;
+	        border-top: 1px solid #696969;
+        }
+        .oce-first
+        {
+	        border-right: 1px solid transparent;
+	        border-left: 1px solid transparent;
+        }
+
+
+
+         .hor-minimalist-b
+    {
+            font-family: 'Droid Sans', "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	    font-size: 12px;
+	    margin-left: 10px;
+	    width: 360px;
+        border-collapse: collapse;
+        border-bottom: 1px solid ;
+        border-top: 1px solid #696969;
+        border-right: 1px solid #696969;
+        border-left:1px solid #696969;
+    }
+
+    .hor-minimalist-b th
+    {
+	    font-size: 14px;
+	    font-weight: normal;
+	    color: #039;
+	    padding-left:5px;
+        padding-right:5px;
+    }
+    .hor-minimalist-b td
+    {
+	    border-bottom: 1px solid #696969;
+	    padding-left:5px;
+        padding-right:5px;
+    }
+
+            .onlyinscreen {
+            display:none;
+        }
+
+         .onlyinprint {
+            display:block;
+        }
+
+        .billToTable {
+            font-family: 'Droid Sans', "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	        font-size: 12px;
+	        margin-left: 5px;
+            padding-left: 0px;
+	        width: 580px;
+	        border-collapse: collapse;
+        }
+
+       .auto-style4 {
+            width: 376px;
+        }

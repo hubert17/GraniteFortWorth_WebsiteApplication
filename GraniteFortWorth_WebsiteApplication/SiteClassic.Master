@@ -1,0 +1,229 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SiteClassic.master.cs" Inherits="GraniteFortWorth_WebsiteApplication.SiteClassic" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title><%: Page.Title %> | Wholesale Granite DFW - Fort Worth</title>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Junge">
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
+
+
+
+	<script type="text/javascript">
+	<!--//
+    var use_debug = false;
+
+        function debug() {
+            if (use_debug && window.console && window.console.log) console.log(arguments);
+        }
+	</script>
+  <!--[if lt IE 9]>
+	    <script type="text/javascript" src="js/html5.js"></script>
+	    <style type="text/css">
+		    .slider_bg {behavior:url(js/PIE.htc)}
+	    </style>
+    <![endif]-->
+    <!--[if lt IE 7]>
+	    <div style='clear:both;text-align:center;position:relative'>
+		    <a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" alt="" /></a>
+	    </div>
+    <![endif]-->
+
+
+    <style type="text/css">
+	    .weekend-specials {
+            width: 480px;
+            float:left;
+            margin-left:60px;
+            color:white;
+
+	    }
+
+        .weekend-specials h4, h5 {
+			margin-bottom: 0;
+            color:white;
+            line-height:25px;
+            font-size:large;
+            font-family: 'Trebuchet MS',Arial,sans-serif;
+            text-shadow: -2px 2px 6px rgba(93, 36, 0, 1);
+		}
+
+            .weekend-specials h4 span {
+                
+                font-style:italic;
+            }
+
+	    .weekend-specials a {
+            color:white;
+	    }
+	</style>
+
+  <style type='text/css'>
+        .css3-standout {
+            -webkit-animation: glow .5s infinite alternate;
+            animation: glow .5s infinite;
+        }
+        @-webkit-keyframes glow {
+            to {
+                text-shadow: 0 0 10px yellow, 0 0 5px white;
+                color:white;
+                font-weight:bold;                
+            }
+        }
+        @keyframes glow {
+            100% {                 
+                text-shadow: 0 0 20px yellow, 0 0 5px white;
+                -moz-text-shadow: 0 0 20px yellow, 0 0 5px white;
+                color:white;
+            }
+        }
+
+        .dfw-slogan {
+            float:left;width:250px;margin-left:-255px;margin-top:75px;text-align:center;font-style:italic;color:yellow;
+        }
+
+        /*Creates blingking text*/
+        .blink {
+          animation: blink .5s steps(5, start) infinite;
+          -webkit-animation: blink .5s steps(5, start) infinite;
+        }
+        @keyframes blink {
+          to {
+            visibility: hidden;
+          }
+        }
+        @-webkit-keyframes blink {
+          to {
+            visibility: hidden;
+          }
+        }
+  </style>
+
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body id="page4">
+    <div style="position:absolute;background:url(Images/SSA_Logo_250x250.png) top left no-repeat;height:250px;width:220px;top:0;right:0;"></div>
+    <div id="pagePeel" class="body6">
+	<div class="body1">
+
+    <div class="main">
+    <!-- header -->
+			    <header>
+				    <h1><a href="default.aspx" id="logo">Wholesale Granite DFW Logo</a></h1>
+                    <div class="dfw-slogan css3-standout">WHOLESALE TO HOMEOWNERS</div>
+				    <nav>
+                        <div id="divWeekendSpecials" class="weekend-specials">
+                        <h4 style="font-size:x-large;"><a href="/onlinequote">Save $50!!! <span class="blink">Use our Online Quote System</span></a></h4>
+                        <h4><a href="OnlineQuote-promo.aspx#promo2">BEST PRICE SPECIALS! <span class="blink">Click here!</span></a></h4>
+<%--                            <img src="Images/cc_logo.png" style="margin-left:28px;padding-top:15px;" />--%>
+                        </div>                        
+					    <ul id="top_nav">
+                            <li class="end"><a>
+                                    <!-- Place this tag where you want the +1 button to render. -->
+                                    <div class="g-plusone" data-href="http://www.granitesouthlake.com/Default.aspx"></div>
+
+                                    <!-- Place this tag after the last +1 button tag. -->
+                                    <script type="text/javascript">
+                                        (function () {
+                                            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                                            po.src = 'https://apis.google.com/js/plusone.js';
+                                            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                                        })();
+                                    </script>
+                                </a>
+						    </li>
+					    </ul>
+				    </nav>
+				    <nav>
+					    <ul id="menu">
+						    <li><a href="Default.aspx">Home</a></li>
+						    <li><a href="GraniteColors.aspx">Granite</a></li>						    
+						    <li><a href="GraniteEdges.aspx">Edges</a></li>
+                            <li><a href="Sinks.aspx">Sinks</a></li>
+                            <li><a href="OnlineQuote-promo.aspx">Slab Sale</a></li>
+						    <li><a href="onlinequote">Online Quote</a></li>
+					    </ul>
+				    </nav>
+			    </header>
+    <!-- / header -->
+
+    <!-- content -->
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+    </div>
+	</div>
+    </div>
+
+    <div class="body2">
+	<div class="main">
+	<article id="content2">
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+	</article>   
+    <!-- / content -->
+	</div>
+    </div>
+
+
+    <div class="body3">
+	    <div class="body4">
+		    <div class="main">
+    <!-- footer -->
+			    <footer>
+				    <div class="wrapper">
+					    <section class="col1 pad_left1">
+						    <h3>Call Us: <span>(817) 300-3298</span></h3>
+						    © <%: DateTime.Now.Year %> Wholesale Granite DFW. All Rights Reserved.  <a href="http://www.granitesouthlake.com/mobile/">Try our new Mobile Site</a>                            
+					    </section>
+					    <section class="col2 pad_left1">
+						    <h3>Follow Us </h3>
+						    <ul id="icons">
+							    <li><a href="Contact.aspx" class="normaltip" title="Contact Us"><img src="images/icon1.gif" alt=""></a></li>
+							    <li><a href="Contact.aspx" class="normaltip" title="Contact Us"><img src="images/icon3.gif" alt=""></a></li>
+							    <li><a href="https://plus.google.com/+GranitesouthlakeForthworth" class="normaltip" title="Google+"><img src="images/icon5.gif" alt=""></a></li>
+						    </ul>
+                            Web development by <a href="mailto:webmaster@granitesouthlake.com ">BERNARD GABON</a>
+					    </section>
+				    </div>
+				    <!-- {%FOOTER_LINK} -->
+			    </footer>
+    <!-- / footer -->
+		    </div>
+	    </div>
+    </div>
+    <div id="insidePeel"></div>
+
+    <script type="text/javascript"> Cufon.now(); </script>
+    <script type="text/javascript" src="js/cufon-yui.js"></script>
+    <script type="text/javascript" src="js/cufon-replace.js"></script>  
+    <script type="text/javascript" src="js/Forum_400.font.js"></script>
+    <script type="text/javascript" src="js/atooltip.jquery.js"></script> 
+
+    <script type="text/javascript">
+        $("#promo2").click(function () {
+            if (!$("#promo2>div").is(":hover")) document.location.href = '#';
+        });
+    </script>
+
+        <asp:ContentPlaceHolder ID="ScriptsContentPlaceHolder" runat="server">
+        
+        </asp:ContentPlaceHolder>
+</body>
+</html>
